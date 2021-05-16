@@ -1,6 +1,6 @@
 """ The main aim of this py file is to keep track of all the button or things
-that we will require while we test so that in case they change in future,
-we just have to make changes in the <locator.py>
+that we will require while we access the website so that in case they change in future,
+we just have to make changes in the <button.py>
 """
 from selenium.webdriver.common.by import By
 
