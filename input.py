@@ -1,0 +1,8 @@
+MOBILE_NUMBER = '9099272211'
+STATE = "gujar"
+DISTRICT = "surat corp"
+
+TOMORROW = 1
+TODAY = 0
+CUSTOM = 3
+

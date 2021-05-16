@@ -1,0 +1,118 @@
+
+#
+# #
+
+
+# click search button
+# select age18+
+# scan for available slots
+
+
+# locations = driver.find_elements_by_xpath('//div[@class="ng-star-inserted"]')
+# for location in locations:
+#     days = location.find_elements_by_xpath('//ul[@class="slots-available-wrap"]')
+#     for day in days:
+#         days_in = day.find_elements_by_xpath('//div')
+
+#
+# try:
+#     main = WebDriverWait(driver, 30).until(
+#         EC.presence_of_element_located((By.NAME, 'aria-invalid="true"')
+#     print('success')
+#     time.sleep(3)
+#     new_button = driver.find_element_by_name("aria-invalid")
+#
+#     otp_button = driver.find_element_by_tag_name("ion-button")
+#     otp_button.click()
+# except:
+#     print('failure')
+#     driver.quit()
+#
+#
+# # i want to click on schedule
+# # try:
+# #     main = WebDriverWait(driver, 10).until(
+# #         EC.presence_of_element_located((By.CLASS_NAME, "mat-input-0"))
+# #     )
+# #     schedule_button = driver.find_element_by_class_name("m-lablename")
+# #     schedule_button.click()
+# #
+# # except:
+# #     print("We didn't find what you were looking for")
+# #     driver.quit()
+# time.sleep(10)
+#
+# driver.quit()
+#
+
+#
+# for slots in list_of_locations:
+#     content = slots.text
+#     if content.isnumeric():
+#         alotted = '//div[@class="vaccine-box vaccine-box1 vaccine-padding"]/a[contains(text(), ' + content + ')]'
+#         open_slot = driver.find_element_by_xpath(alotted)
+#         open_slot.click()
+#         active = False
+
+# # MAIN
+
+
+print('booked count', b_count)
+print('na count', n_count)
+#
+# active = True
+# while active:
+#     click_search_button()
+#     click_age_button()
+#     # waiting for slots to appear
+#     wait_slot = WebDriverWait(driver, 20).until(
+#         EC.presence_of_element_located((By.XPATH, button.SLOTS))
+#     )
+#     time.sleep(0.1)
+#     rows = driver.find_elements_by_xpath(button.ROWS)
+#
+#     print(len(rows), 'number of rows')
+#     print(rows)
+#     for i in range(len(rows)):
+#         time.sleep(0.01)
+#         slots = rows[i].find_elements_by_xpath(button.SLOTS)
+#         time.sleep(1)
+#         print(len(slots), 'this is the number of slots')
+#         slot = slots[0]
+#         print(slot.text, 'our slots')
+#         if slots.text.strip().isnumeric():
+#             alotted = '//div[@class="vaccine-box vaccine-box1 vaccine-padding"]/a[contains(text(), ' + slot.text + ')]'
+#             open_slot = driver.find_element_by_xpath(alotted)
+#             open_slot.click()
+#             active = False
+#             break
+    # except:
+    #     driver.refresh()
+    #     search_switch = WebDriverWait(driver, 20).until(
+    #         EC.element_to_be_clickable(button.SEARCH_SWITCH)
+    #     )
+    #     driver.execute_script("arguments[0].click();", search_switch)
+    #
+    #     state = WebDriverWait(driver, 20).until(
+    #         EC.presence_of_element_located(button.SELECT_STATE)
+    #     )
+    #     # state2 = WebDriverWait(driver, 20).until(
+    #     #     EC.element_to_be_clickable(button.SELECT_STATE)
+    #     # )
+    #     time.sleep(0.4)
+    #     state.send_keys(input.STATE)
+    #     state.send_keys(Keys.RETURN)
+    #
+    #     time.sleep(0.4)
+    #
+    #     district = driver.find_element_by_xpath(
+    #         '//mat-select[@formcontrolname="district_id"]')
+    #     district.send_keys(input.DISTRICT)
+    #     district.send_keys(Keys.RETURN)
+    #
+    #     time.sleep(0.2)
+
+        # if 'Booked' in slot.text:
+        #     b_count += 1
+        # if 'NA' in slot.text:
+        #     n_count += 1
